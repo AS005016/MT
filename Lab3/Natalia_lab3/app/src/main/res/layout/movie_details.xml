@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/detail_movie_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="225dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:foregroundTintMode="screen"/>
+
+            <TextView
+                android:id="@+id/detail_movie_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@id/detail_movie_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_cover" />
+
+            <TextView
+                android:id="@+id/detail_movie_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="2020-01-10"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detail_movie_date_name"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_title" />
+
+            <TextView
+                android:id="@+id/detail_movie_date_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="16dp"
+                android:text="Release date:"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@id/detail_movie_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_title" />
+
+            <TextView
+                android:id="@+id/detail_movie_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:text="100%"
+                android:textColor="#ff0000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/detail_movie_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@+id/detail_movie_title"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_cover"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:lineSpacingExtra="8dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/detail_movie_desc_name"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Description: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_date"
+                app:layout_constraintBottom_toTopOf="@id/detail_movie_desc"/>
+
+            <TextView
+                android:lineSpacingExtra="8dp"
+                android:textColor="#ffff"
+                android:id="@+id/detail_movie_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingBottom="20dp"
+                android:text="test text test text test text test text test text test text test text test text test text "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_movie_desc_name" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+<!--
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/detail_movie_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:foregroundTintMode="screen"/>
+
+        <TextView
+            android:id="@+id/detail_movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/detail_movie_rate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_cover" />
+
+        <TextView
+            android:id="@+id/detail_movie_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="2020-01-10"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/detail_movie_date_name"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_title" />
+
+        <TextView
+            android:id="@+id/detail_movie_date_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="16dp"
+            android:text="Release date:"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/detail_movie_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_title" />
+
+        <TextView
+            android:id="@+id/detail_movie_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="100%"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/detail_movie_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/detail_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_cover"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/detail_movie_desc_name"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Description: "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_date"
+            app:layout_constraintBottom_toTopOf="@id/detail_movie_desc"/>
+
+        <TextView
+            android:lineSpacingExtra="8dp"
+            android:textColor="#ffff"
+            android:id="@+id/detail_movie_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="20dp"
+            android:text="test text test text test text test text test text test text test text test text test text "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_desc_name" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+-->
